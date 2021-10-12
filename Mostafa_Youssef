@@ -17,7 +17,9 @@ git push origin dev
 git push origin test
 
 git checkout main
-
+git merge dev
+git merge test
+git push origin main
 
 remove remotely:
 git push origin :dev
@@ -27,3 +29,16 @@ remove localy:
  git branch -D test
  git branch -D dev
 
+git tag -a VCS.300 -m"create annoted tag"
+git push origin VCS.300
+git tag
+
+delete remote:
+git push origin --delete VCS.300
+delete local:
+git tag -d VCS.300
+
+vim README.md
+git add README.md
+git commit -m "readme"
+git push origin main
