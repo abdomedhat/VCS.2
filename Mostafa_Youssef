@@ -1,0 +1,9 @@
+mkdir VCS.2
+git init
+git remote add ----
+vim Mostafa_Youssef
+git add Mostafa_Youssef
+git commit -m "Steps File added"
+git branch -M main
+git push origin main
+
