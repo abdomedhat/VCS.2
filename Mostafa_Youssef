@@ -6,4 +6,20 @@ git add Mostafa_Youssef
 git commit -m "Steps File added"
 git branch -M main
 git push origin main
+git checkout -b dev
+touch file1 file2
+git add .
+git commit -m "dev branch has two files add"
+git branch test
+git push origin dev
+git push origin test
+
+
+remove remotely:
+git push origin :dev
+git push origin :test
+
+remove localy:
+ git branch -D test
+ git branch -D dev
 
